@@ -7,17 +7,17 @@ int main(){
     int size  = 10;
 
     // loop to control the traversal / number of rounds
-    for(int i = 0 ; i < size  ; i++){ 
+    for(int i = 1 ; i < size  ; i++){ 
         // controls the loop for comparing jth and jth + 1 element
-        for(int j = i + 1 ; j < size  ; j++){
-            if(arr[j] < arr[j+1]){
-                swap(arr[j] , arr[i]);
+        for(int j = 0 ; j < size - i  ; j++){
+            if(arr[j] > arr[j+1]){
+                swap(arr[j+1] , arr[j]);
             }
         }
         
 
     }
 
-    for( int i = 0; i < 10 ; i++)
+    for( int i = 0; i < size ; i++)
     cout<<arr[i]<<" ";
 }
