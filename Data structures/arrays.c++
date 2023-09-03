@@ -39,18 +39,7 @@ void searchArr(int arr[], int size, int srch){
     }
 
 }
-
-void revchar(char charr[] , int len){
-    // int len = sizeof(charr);
-    int s = 0;
-    int e = len;
-    while(s<e)
-    {
-        swap(charr[s++], charr[e--]);
-    }
-    cout<<"reverse of the string is : "<<charr<<endl;
-    
-    }
+ 
 int main()
 {
     int n;
@@ -70,26 +59,6 @@ int main()
 
     printArray(arr, n);
     reverseArray(arr,n);
-
-
-    // Character Arrays
-    char name[8];
-    cout<<"enter your name: ";
-    cin>>name;
-    cout<<"Your name is : "<<name<<endl;
-
-    int len = sizeof(name);
-    cout<<"length of the name is : "<<len<<endl;
-
-    revchar(name , 8);
-
-
-    
-
-
-
-
-
 
 
     return 0;
