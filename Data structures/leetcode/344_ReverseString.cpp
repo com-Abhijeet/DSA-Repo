@@ -4,8 +4,6 @@ Write a function that reverses a string. The input string is given as an array o
 
 You must do this by modifying the input array in-place with O(1) extra memory.
 
- 
-
 Example 1:
 
 Input: s = ["h","e","l","l","o"]
@@ -18,22 +16,22 @@ Output: ["h","a","n","n","a","H"]
 */
 
 
-#include<iostream>
-#include<vector>
-using namespace std;
-void reverseString(vector<char>& s) {
-    int st = 0;
-    int e = s.size() - 1;
-    while(st<e){
-        swap(s[st++] , s[e--]);
-    }  
-}
-int main(){
-    vector<char> s = {'h','e','l','l','o'};
-    reverseString(s);
-    for(auto i: s){
-        cout<<i<<" ";
+    #include<iostream>
+    #include<vector>
+    using namespace std;
+    void reverseString(vector<char>& s) {
+        int st = 0;
+        int e = s.size() - 1;
+        while(st<e){
+            swap(s[st++] , s[e--]);
+        }  
     }
-    cout<<endl;
-    return 0;
-}
+    int main(){
+        vector<char> s = {'h','e','l','l','o'};
+        reverseString(s);
+        for(auto i: s){
+            cout<<i<<" ";
+        }
+        cout<<endl;
+        return 0;
+    }

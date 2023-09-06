@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "g:/DSA",
-      "program": "g:/DSA/build/Debug/outDebug",
+      "cwd": "g:/DSA/Data structures/leetcode",
+      "program": "g:/DSA/Data structures/leetcode/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
